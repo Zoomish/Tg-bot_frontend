@@ -15,8 +15,8 @@ export default function ReputationPage() {
     <main>
       <section>
         <div className="container">
-          <div>
-            <table>
+          <div className={styles.reputations_table}>
+            <table className="table table-striped table-dark mt-2 table-bordered">
               <thead>
                 <tr>
                   <th>Место</th>
