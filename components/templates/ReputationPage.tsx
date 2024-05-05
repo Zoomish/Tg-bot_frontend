@@ -4,7 +4,7 @@ import { $reputation, ReputationGate } from "@/context/reputation";
 import { useGate, useStore } from "effector-react";
 import { getReputationsFx } from "../../api/reputation";
 import ReputationSkeleton from "../modules/reputationSkeleton";
-import styles from "@/styles/reputations.module.sass";
+import styles from "@/styles/reputations.module.scss";
 import Image from "next/image";
 
 export default function ReputationPage() {
