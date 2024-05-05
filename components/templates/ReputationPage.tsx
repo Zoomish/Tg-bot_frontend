@@ -34,7 +34,7 @@ export default function ReputationPage() {
                         <td className={styles.full_name}>
                           <div className={styles.full_name__inner}>
                             <img
-                              src={!!userAvatar ? userAvatar : ""}
+                              src={userAvatar}
                               alt={fullName}
                               style={{ width: "50px", height: "50px" }}
                               onError={(e) => {
