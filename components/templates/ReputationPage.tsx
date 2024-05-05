@@ -41,8 +41,10 @@ export default function ReputationPage() {
                               height={50}
                               className="rounded-circle"
                             />
+                            <span>{fullName}</span>
                           </div>
                         </td>
+                        <td>{reputation}</td>
                       </tr>
                     )
                   )
