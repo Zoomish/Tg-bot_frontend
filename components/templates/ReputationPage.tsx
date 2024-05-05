@@ -5,6 +5,7 @@ import { useGate, useStore } from "effector-react";
 import { getReputationsFx } from "../../api/reputation";
 import ReputationSkeleton from "../modules/reputationSkeleton";
 import styles from "@/styles/reputations.module.sass";
+import Image from "next/image";
 
 
 export default function ReputationPage() {
@@ -31,7 +32,12 @@ export default function ReputationPage() {
                   reputations.map(({reputation, fullName, userAvatar}, index) => (
                     <tr key={index}>
                       <th>{index + 1}</th>
-                      <td className={styles.full_name}></td>
+                      <td className={styles.full_name}>
+                        <div className={styles.full_name__inner}>
+                            <Image
+                                src={!!userAvatar ? userAvatar : ""} alt={fullName} width={50} height={50} className="rounded-circle"/>
+                        </div>
+                      </td>
                     </tr>
                   ))
                 )}
