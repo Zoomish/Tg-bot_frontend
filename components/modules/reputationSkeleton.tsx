@@ -1,6 +1,6 @@
 import styles from "@/styles/reputations.module.sass";
 
-const ReputationPage = () => {
+const ReputationSkeleton = () => {
   <>
     {Array.from(new Array(8)).map((_, i) => (
       <tr key={i}>
@@ -13,4 +13,4 @@ const ReputationPage = () => {
     ))}
   </>;
 };
-export default ReputationPage;
+export default ReputationSkeleton;
