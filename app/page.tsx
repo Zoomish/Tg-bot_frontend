@@ -3,7 +3,7 @@
 export const metadata = {
   title: 'Репутация участников',
 }
-export default function Home() {
+export default function Reputation() {
   return (
     <div>
       AAAAAAAAAAAAA
