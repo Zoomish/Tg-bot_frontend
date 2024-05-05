@@ -6,4 +6,5 @@ const reputation = createDomain();
 
 export const $reputation = reputation
   .createStore<IReputation[]>([])
-  .on(getReputationsFx.done, (_, { result }) => result);
+  .on(getReputationsFx.done, (_, { result }) => result)
+  .on(getReputationsFx.fail, () => []);
