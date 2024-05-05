@@ -9,5 +9,4 @@ export default function Home() {
       AAAAAAAAAAAAA
     </div>
   )
-  )
 }
