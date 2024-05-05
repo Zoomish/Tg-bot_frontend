@@ -1,3 +1,5 @@
+import styles from "@/styles/reputations.module.sass";
+
 const ReputationPage = () => {
   <>
     {Array.from(new Array(8)).map((_, i) => (
