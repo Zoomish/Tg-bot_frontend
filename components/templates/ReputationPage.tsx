@@ -5,7 +5,6 @@ import { useGate, useStore } from "effector-react";
 import { getReputationsFx } from "../../api/reputation";
 import ReputationSkeleton from "../modules/reputationSkeleton";
 import styles from "@/styles/reputations.module.scss";
-import Image from "next/image";
 
 export default function ReputationPage() {
   useGate(ReputationGate);
@@ -34,13 +33,11 @@ export default function ReputationPage() {
                         <th>{index + 1}</th>
                         <td className={styles.full_name}>
                           <div className={styles.full_name__inner}>
-                            <Image
+                            <img
                               src={!!userAvatar ? userAvatar : ""}
                               alt={fullName}
-                              width={50}
-                              height={50}
+                              style={{ width: "50px", height: "50px" }}
                               onError={(e) => {
-                                console.log(userAvatar);
                                 e.currentTarget.src =
                                   "https://png.klev.club/uploads/posts/2024-04/png-klev-club-8vfs-p-ikonka-profil-png-21.png";
                               }}
