@@ -1,4 +1,4 @@
-import styles from "@/styles/reputation.module.scss";
+import styles from "@/styles/reputations.module.scss";
 
 const ReputationSkeleton = () => (
   <>
