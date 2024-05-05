@@ -39,6 +39,9 @@ export default function ReputationPage() {
                               alt={fullName}
                               width={50}
                               height={50}
+                              onError={(e) => {
+                                e.currentTarget.src = ""
+                              }}
                               className="rounded-circle"
                             />
                             <span>{fullName}</span>
