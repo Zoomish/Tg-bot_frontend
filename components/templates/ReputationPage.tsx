@@ -8,5 +8,21 @@ export default function ReputationPage() {
   useGate(ReputationGate);
   const reputations = useStore($reputation);
   const spinner = useStore(getReputationsFx.pending);
-  return <div>ReputationPage</div>;
+  return <main>
+    <section>
+        <div className="container">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Место</th>
+                            <th>Репутация</th>
+                            <th>Участник</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </section>
+  </main>
 }
