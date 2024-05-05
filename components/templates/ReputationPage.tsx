@@ -30,7 +30,7 @@ export default function ReputationPage() {
                 ) : (
                   reputations.map(
                     ({ reputation, fullName, userAvatar }, index) => (
-                      <tr key={index} style={{height: '55px'}}>
+                      <tr key={index} style={{ height: "55px" }}>
                         <th>{index + 1}</th>
                         <td className={styles.full_name}>
                           <div className={styles.full_name__inner}>
@@ -40,7 +40,9 @@ export default function ReputationPage() {
                               width={50}
                               height={50}
                               onError={(e) => {
-                                e.currentTarget.src = "https://png.klev.club/uploads/posts/2024-04/png-klev-club-8vfs-p-ikonka-profil-png-21.png"
+                                console.log(userAvatar);
+                                e.currentTarget.src =
+                                  "https://png.klev.club/uploads/posts/2024-04/png-klev-club-8vfs-p-ikonka-profil-png-21.png";
                               }}
                               className="rounded-circle"
                             />
