@@ -1,12 +1,8 @@
-
+import ReputationPage from "@/components/templates/ReputationPage";
 
 export const metadata = {
-  title: 'Репутация участников',
-}
+  title: "Репутация участников",
+};
 export default function Reputation() {
-  return (
-    <div>
-      AAAAAAAAAAAAA
-    </div>
-  )
+  return <ReputationPage></ReputationPage>;
 }
