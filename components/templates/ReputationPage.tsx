@@ -1,4 +1,4 @@
-"use-client";
+"use client";
 
 import { $reputation, ReputationGate } from "@/context/reputation";
 import { useGate, useStore } from "effector-react";
